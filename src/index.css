@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 1.5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+.twinkling {
+  animation: twinkle 1.5s infinite ease-in-out;
+}
+
+.twinkling:nth-child(odd) {
+  animation-duration: 1.2s;
+  animation-delay: 0.3s;
+}
+
+.twinkling:nth-child(even) {
+  animation-duration: 1.7s;
+  animation-delay: 0.5s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+.twinkling {
+  animation: twinkle 1.5s infinite ease-in-out;
+}
+
+.twinkling:nth-child(odd) {
+  animation-duration: 1.2s;
+  animation-delay: 0.3s;
+}
+
+.twinkling:nth-child(even) {
+  animation-duration: 1.7s;
+  animation-delay: 0.5s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+.twinkling {
+  animation: twinkle 1.5s infinite ease-in-out;
+}
+
+.twinkling:nth-child(odd) {
+  animation-duration: 1.2s;
+  animation-delay: 0.3s;
+}
+
+.twinkling:nth-child(even) {
+  animation-duration: 1.7s;
+  animation-delay: 0.5s;
+}
+
+/* Add this to your styles.css or a similar file */
+@keyframes fly {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: scale(2) translateY(-200px);
+  }
+}
